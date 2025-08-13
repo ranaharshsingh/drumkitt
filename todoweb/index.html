@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>my todo</h2>
+        <div id="todo-1">
+            <h4>1. go to </h4>
+            <button onclick="deleteTodo(1)">delete</button>
+        </div>
+        <div>
+            <h4>2. entry</h4>
+            <button onclick="deleteTodo(2)">delete</button>
+        </div>
+    </div>
+    <div>
+        <input type="text" placeholder="enter your todo">
+        <button onclick="addTodo()">add todo</button>
+    </div>
+</body>
+<script>
+    function addtodo(){
+    let inputEl=document.querySelector("input");
+    let value=inputEl.value;
+
+    let newDiv=document.createElement("div");
+    newDiv.innerHTML=value;
+
+    document.querySelector("body").appendChild(newDiv);
+    }
+</script>
+</html> 

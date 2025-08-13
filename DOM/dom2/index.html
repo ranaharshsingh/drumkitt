@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>my todo</h2>
+    <h4>go to </h4>
+    <div>
+        <input id="inp" type="text" placeholder="add your todo here">
+        <button onclick="addTodo()">addTodo</button>
+    </div>
+</body>
+<script>
+    function addTodo(){
+        const inputEl=document.getElementById("inp");
+        const createdic=document.createElement("div");
+        createdic.innerHTML=value;
+        const parentEl=document.querySelector("body").appendChild(createdic);
+    }
+</script>
+</html>
